@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ForestWebApi.props" />
+</Project>

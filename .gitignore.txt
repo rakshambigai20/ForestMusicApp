@@ -1,0 +1,54 @@
+# Visual Studio & ASP.NET Core
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.vs/
+.vscode/
+.DS_Store
+
+# ASP.NET Secret Management
+secrets.json
+
+# Log files
+*.log
+logs/
+
+# Node.js (React, Angular, Vue, etc.)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Build artifacts
+dist/
+out/
+coverage/
+.env
+
+# SQL Server & EF Core
+app.db
+app.db-journal
+*.mdf
+*.ldf
+Migrations/
+
+# Published Output
+publish/
+wwwroot/
+staticfiles/
+**/Thumbs.db
+
+# IDE / Editor Specific Files
+.idea/
+*.iml
+
+# Python (if using scripts)
+__pycache__/
+*.pyc
+
+# Docker
+.dockerignore
+docker-compose.override.yml

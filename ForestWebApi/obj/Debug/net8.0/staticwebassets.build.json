@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KN4qZ8EWlwibjBD/qM7+htHNuVa5z/p08YaCuQn35uA=",
+  "Source": "ForestWebApi",
+  "BasePath": "_content/ForestWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

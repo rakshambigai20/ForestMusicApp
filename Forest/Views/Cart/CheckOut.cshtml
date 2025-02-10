@@ -1,0 +1,32 @@
+﻿@model Forest.Services.Models.CheckOutUser
+<h4>Check Out</h4>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CheckOut">
+          @*########### Display User Details ############*@
+          @if(Model.User != null)
+          @Html.Partial("~/Views/Cart/User.cshtml", Model.User)
+          <div class="form-group">
+              <label asp-for="DelAddress" class="control-label"></label>
+              <input asp-for="DelAddress" class="form-control"/>
+          </div>
+          @* ############### Display Cart Content ################*@
+          @if(Model.Cart != null)
+          @Html.Partial("~/Views/Cart/DisplayCart.cshtml", Model.Cart)
+          <div class="form-group">
+              <input type="submit" value="Buy" class="btn-primary"/>
+          </div>
+        </form>
+    </div>
+</div>
+
+@* Temporary debug information *@
+@if (Model.User != null)
+{
+    <div>Debug: User Name is @Model.User.Name</div>
+    <div>Debug: User Email is @Model.User.Email</div>
+}
+else
+{
+    <div>Debug: User object is null</div>
+}

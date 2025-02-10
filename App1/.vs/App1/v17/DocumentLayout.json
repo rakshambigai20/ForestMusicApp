@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\gettingstarted.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\gettingstarted.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\services\\mockdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\services\\mockdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\services\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\services\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\views\\itemdetailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\views\\itemdetailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\views\\aboutpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|c:\\users\\balar\\source\\repos\\forest_main\\app1\\app1\\views\\itemspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{6CF079C3-ACD7-46B2-8B46-FDD570735B8B}|App1\\App1.csproj|solutionrelative:app1\\views\\itemspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MockDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Services\\MockDataStore.cs",
+              "RelativeDocumentMoniker": "App1\\Services\\MockDataStore.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Services\\MockDataStore.cs",
+              "RelativeToolTip": "App1\\Services\\MockDataStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:30:49.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "App1\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Models\\Item.cs",
+              "RelativeToolTip": "App1\\Models\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:31:02.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\ViewModels\\AboutViewModel.cs",
+              "RelativeDocumentMoniker": "App1\\ViewModels\\AboutViewModel.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\ViewModels\\AboutViewModel.cs",
+              "RelativeToolTip": "App1\\ViewModels\\AboutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:29:40.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "App1\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "App1\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:29:38.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\ItemsPage.xaml",
+              "RelativeDocumentMoniker": "App1\\Views\\ItemsPage.xaml",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\ItemsPage.xaml",
+              "RelativeToolTip": "App1\\Views\\ItemsPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T09:29:22.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\ItemDetailPage.xaml",
+              "RelativeDocumentMoniker": "App1\\Views\\ItemDetailPage.xaml",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\ItemDetailPage.xaml",
+              "RelativeToolTip": "App1\\Views\\ItemDetailPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T09:28:26.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GettingStarted.txt",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\GettingStarted.txt",
+              "RelativeDocumentMoniker": "App1\\GettingStarted.txt",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\GettingStarted.txt",
+              "RelativeToolTip": "App1\\GettingStarted.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-17T09:14:22.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Services\\IDataStore.cs",
+              "RelativeDocumentMoniker": "App1\\Services\\IDataStore.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Services\\IDataStore.cs",
+              "RelativeToolTip": "App1\\Services\\IDataStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:31:22.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "App1\\Views\\AboutPage.xaml",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\App1\\App1\\Views\\AboutPage.xaml",
+              "RelativeToolTip": "App1\\Views\\AboutPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T09:25:57.101Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1246,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

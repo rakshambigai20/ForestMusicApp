@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|c:\\users\\balar\\source\\repos\\forest_main\\forest\\views\\genre\\getgenres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|solutionrelative:views\\genre\\getgenres.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/sqlserver_forest_001.database.windows.net/sqldb_forest/Forest/SqlTable/dbo.Genres.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0EBC8F1-8489-46F1-BB29-2E6551518D68}|..\\Forest.Data\\Forest.Data.csproj|c:\\users\\balar\\source\\repos\\forest_main\\forest.data\\dao\\genredao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/sqlserver_forest_001.database.windows.net/sqldb_forest/Forest/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Migrations\\20250210184133_genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|c:\\users\\balar\\source\\repos\\forest_main\\forest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\balar\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0EBC8F1-8489-46F1-BB29-2E6551518D68}|..\\Forest.Data\\Forest.Data.csproj|c:\\users\\balar\\source\\repos\\forest_main\\forest.data\\models\\domain\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|c:\\users\\balar\\source\\repos\\forest_main\\forest\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5B6F1FC-E4C1-4CD3-96F2-D660DF315755}|Forest.csproj|solutionrelative:controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenreDAO.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\DAO\\GenreDAO.cs",
+              "RelativeDocumentMoniker": "..\\Forest.Data\\DAO\\GenreDAO.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\DAO\\GenreDAO.cs",
+              "RelativeToolTip": "..\\Forest.Data\\DAO\\GenreDAO.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T17:42:49.615Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetGenres.cshtml",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\Views\\Genre\\GetGenres.cshtml",
+              "RelativeDocumentMoniker": "Views\\Genre\\GetGenres.cshtml",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\Views\\Genre\\GetGenres.cshtml",
+              "RelativeToolTip": "Views\\Genre\\GetGenres.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:29:58.327Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/sqlserver_forest_001.database.windows.net/sqldb_forest/Forest/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T18:42:14.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Genres [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/sqlserver_forest_001.database.windows.net/sqldb_forest/Forest/SqlTable/dbo.Genres.sql",
+              "ToolTip": "dbo.Genres [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-10T18:42:02.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250210184133_genre.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Migrations\\20250210184133_genre.cs",
+              "RelativeDocumentMoniker": "..\\Forest.Data\\Migrations\\20250210184133_genre.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Migrations\\20250210184133_genre.cs",
+              "RelativeToolTip": "..\\Forest.Data\\Migrations\\20250210184133_genre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:41:33.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T18:39:24.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\balar\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453\\secrets.json",
+              "ToolTip": "C:\\Users\\balar\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAADsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T18:39:07.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Models\\Domain\\Genre.cs",
+              "RelativeDocumentMoniker": "..\\Forest.Data\\Models\\Domain\\Genre.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Models\\Domain\\Genre.cs",
+              "RelativeToolTip": "..\\Forest.Data\\Models\\Domain\\Genre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:36:39.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GenreController.cs",
+              "DocumentMoniker": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\Controllers\\GenreController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GenreController.cs",
+              "ToolTip": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest\\Controllers\\GenreController.cs",
+              "RelativeToolTip": "Controllers\\GenreController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:33:59.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
