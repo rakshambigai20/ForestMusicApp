@@ -2,13 +2,20 @@ using Forest.Data;
 using Microsoft.AspNetCore.Identity;
 using Forest.Data.Models.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Retrieve the connection string
 //var connectionString = builder.Configuration.GetConnectionString("ForestContext") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 var connectionString = "Server=tcp:sqlserver-forest-001.database.windows.net,1433;Initial Catalog=sqldb-forest;Persist Security Info=False;User ID=Forest;Password=abcd@1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+var storageConnection = "DefaultEndpointsProtocol=https;AccountName=stforestsouthukdev001;AccountKey=jDABENqdM6AtsdyH8bRq1ir+N7OGz6ryOwvhG3aZhVqxbh5rDbvHmg1MI3y+rYB4oL5XomwWZUyY+ASt4sVYSA==;EndpointSuffix=core.windows.net";
 
+
+builder.Services.AddAzureClients(azureBuilder =>
+{
+    azureBuilder.AddBlobServiceClient(storageConnection);
+});
 // Add DbContext for application-specific data
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));

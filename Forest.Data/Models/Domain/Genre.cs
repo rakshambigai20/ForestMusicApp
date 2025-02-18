@@ -12,6 +12,9 @@ namespace Forest.Data.Models.Domain
         public string Name { get; set; }
 
         public string PhotoUrl { get; set; }
+
+        public bool showUpload = true;
+        public bool uploadSuccessful = false;
         public virtual ICollection<Music> Musics { get; set; } = new List<Music>();
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.OutServices\\Forest.OutServices.csproj": {}
+    "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.OutServices\\Forest.OutServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj": {
+    "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj",
+        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj",
         "projectName": "Forest.Data",
-        "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj",
+        "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj",
         "packagesPath": "C:\\Users\\balar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\obj\\",
+        "outputPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.OutServices\\Forest.OutServices.csproj": {
+    "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.OutServices\\Forest.OutServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.OutServices\\Forest.OutServices.csproj",
+        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.OutServices\\Forest.OutServices.csproj",
         "projectName": "Forest.OutServices",
-        "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.OutServices\\Forest.OutServices.csproj",
+        "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.OutServices\\Forest.OutServices.csproj",
         "packagesPath": "C:\\Users\\balar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.OutServices\\obj\\",
+        "outputPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.OutServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -125,11 +125,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj": {
-                "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj"
+              "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj": {
+                "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj"
               },
-              "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\Forest.Services.csproj": {
-                "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\Forest.Services.csproj"
+              "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\Forest.Services.csproj": {
+                "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\Forest.Services.csproj"
               }
             }
           }
@@ -169,14 +169,14 @@
         }
       }
     },
-    "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\Forest.Services.csproj": {
+    "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\Forest.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\Forest.Services.csproj",
+        "projectUniqueName": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\Forest.Services.csproj",
         "projectName": "Forest.Services",
-        "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\Forest.Services.csproj",
+        "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\Forest.Services.csproj",
         "packagesPath": "C:\\Users\\balar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Services\\obj\\",
+        "outputPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,8 +198,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj": {
-                "projectPath": "C:\\Users\\balar\\source\\repos\\Forest_Main\\Forest.Data\\Forest.Data.csproj"
+              "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj": {
+                "projectPath": "C:\\Users\\balar\\source\\repos\\ForestMusicApp\\Forest.Data\\Forest.Data.csproj"
               }
             }
           }

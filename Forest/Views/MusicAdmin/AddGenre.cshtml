@@ -1,8 +1,14 @@
 ﻿@model Forest.Data.Models.Domain.Genre
+@using Azure.Storage.Blobs;
+@using Azure.Storage.Blobs.Models;
 
+@inject BlobServiceClient blobService;
 @{
     ViewData["Title"] = "AddGenre";
 }
+
+
+
 
 <h1>AddGenre</h1>
 
@@ -17,6 +23,15 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label for="PhotoUrl" class="control-label">Upload Image</label>
+                <input type="file" id="PhotoUrl" name="PhotoFile" onchange="uploadFile()" />
+                <span asp-validation-for="PhotoUrl" class="text-danger"></span>
+                <input type="hidden" id="HiddenPhotoUrl" name="PhotoUrl" /> <!-- Hidden field to store blob URL -->
+                <p id="uploadStatus"></p>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -28,6 +43,40 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    function uploadFile() {
+        var fileInput = document.getElementById('PhotoUrl');
+        if (fileInput.files.length === 0) {
+            alert("Please select a file.");
+            return;
+        }
+
+        var formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+
+        $.ajax({
+            url: "/MusicAdmin/LoadFiles",
+            type: "POST",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                if (response.success) {
+                    $("#uploadStatus").text("File uploaded successfully!");
+                    $("#HiddenPhotoUrl").val(response.fileUrl); // Assign uploaded file URL to hidden input
+                } else {
+                    $("#uploadStatus").text("Upload failed: " + response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                $("#uploadStatus").text("Error uploading file: " + error);
+            }
+        });
+    }
+</script>
+
 }
