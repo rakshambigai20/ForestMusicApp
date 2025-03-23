@@ -9,9 +9,10 @@ namespace Forest.Data.Models.Domain
     public class Order
     {
         public int Id { get; set; }
-        public DateTime Created { get; set; }
-        public string DelAddress { get; set; }
-        public virtual ICollection<OrderLine> OrderLines { get; set; } = new List<OrderLine>();
+        public DateTime OrderDate { get; set; }
 
+        public string DeliveryAddress { get; set; }
+
+        public virtual ICollection<Orderline> Orderlines { get; set; } = new List<Orderline>();
     }
 }

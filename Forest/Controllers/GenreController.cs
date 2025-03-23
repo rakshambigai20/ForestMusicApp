@@ -3,44 +3,39 @@ using Microsoft.AspNetCore.Mvc;
 using Forest.Services.IService;
 using Forest.Services.Service;
 using Forest.Data.Models.Domain;
-using Forest.Data.Models.Repository;
-using Newtonsoft.Json;
 
 namespace Forest.Controllers
 {
-    public class GenreController : ForestController
+    public class GenreController : Controller
     {
-        //IGenreService genreService;
-        IList<Genre> genres;
-        ForestContext context;
+        IGenreService genreService;
         public GenreController()
         {
-            //genreService = new GenreService();
-            string str = httpContextAccessor.HttpContext.Session.GetString("genres");
-            genres = JsonConvert.DeserializeObject<IList<Genre>>(str);
+            genreService = new GenreService();
         }
         public ActionResult GetGenres()
         {
-            //return View(genreService.GetGenres());
-            string userId = HttpContext.Session.GetString("user_id");
+            IList<Genre> genres = genreService.GetGenres();
             return View(genres);
         }
-
         public ActionResult GetGenre(int id)
         {
-            Genre genre = null;
-            //genre = new Genre();
-            while (genre == null)
-            {
-                for (int i = 0; i < genres.Count; i++)
-                {
-                    if (genres[i].Id == id)
-                        genre = genres[i];
-                }
-            }
+            Genre genre = genreService.GetGenre(id);
             return View(genre);
         }
 
-        
+        [HttpGet]
+        public ActionResult AddGenre()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddGenre(Genre genre)
+        {
+            genreService.AddGenre(genre);
+            return RedirectToAction("GetGenres");
+        }
     }
 }

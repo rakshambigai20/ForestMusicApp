@@ -1,6 +1,5 @@
 ﻿@model Forest.Data.Models.Domain.Genre
 
-
 @{
     ViewData["Title"] = "GetGenre";
 }
@@ -24,10 +23,10 @@
     <a asp-action="Index">Back to List</a>
 </div>
 <p>
-    <h2>Albums in @Model.Name</h2>
-
-    
-
+    <h2> Musics in @Model.Name</h2>
 </p>
-@if(Model.Musics.Count != 0)
-    @Html.Partial("~/Views/Genre/Musics.cshtml", Model.Musics);
+@if (Model?.Musics?.Any() == true)
+    @Html.Partial("~/Views/Genre/Musics.cshtml", Model.Musics)
+
+
+

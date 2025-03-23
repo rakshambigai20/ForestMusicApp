@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Forest.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b268abc1a34eefe2d06f62699a57a6215006d24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab5efa856f6b6d595e90f374c74f986ffe9323b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Forest.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Forest.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

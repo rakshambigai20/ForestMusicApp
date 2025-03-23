@@ -1,128 +1,82 @@
-﻿using Forest.Data.DAO;
-using Forest.Data.IDAO;
-using Forest.Data.Models.Domain;
-using Forest.Data.Models.Repository;
-using Forest.Services.IService;
-using Forest.Services.Models;
+﻿using Forest.Services.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Forest.Data.Models.Domain;
+using Forest.Data.DAO;
+using Forest.Data.IDAO;
+using System.Diagnostics;
+using Forest.Data.Models.Repository;
+using Forest.Services.IService;
+using Forest.Services.Models;
 
 namespace Forest.Services.Service
 {
-    public class MusicService : IMusicService
+    public class MusicService: IMusicService
     {
-        private IMusicDAO musicDAO;
-        private IArtistDAO artistDAO;
-        private IGenreDAO genreDAO;
-        private IUserDAO userDAO;
-        ForestContext context;
+        IMusicDAO musicDAO;
+        IGenreDAO genreDAO;
+        IArtistDAO artistDAO;
+        IUserDAO userDAO;
         public MusicService()
         {
             musicDAO = new MusicDAO();
-            artistDAO = new ArtistDAO();
             genreDAO = new GenreDAO();
+            artistDAO = new ArtistDAO();
             userDAO = new UserDAO();
-            context = new ForestContext();
         }
+
+        //Get music by id
         public Music GetMusic(int id)
         {
-            using (ForestContext context = new ForestContext())
+            using(ForestContext context = new ForestContext())
             {
-                Music music = new Music();
-                music = musicDAO.GetMusic(id, context);
-                return music;
-
+                return musicDAO.GetMusic(context, id);
             }
+
         }
+
+        //Add music
         public bool AddMusic(MusicGenreArtist data, string userId)
         {
             try
             {
                 #region(Prepare Music Object)
-                Music music = new Music()
-                {
-                    Title = data.Title,
-                    Tracks = data.Tracks,
-                    Minutes = data.Minutes,
-                    DateReleased = data.DateReleased,
-                    Price = data.Price,
-                    Image = data.Image,
-                };
+                Music music = new Music();
+                music.Title = data.Title;
+                music.Tracks = data.Tracks;
+                music.minutes = data.minutes;
+                music.ReleaseDate = data.ReleaseDate;
+                music.price = data.Price;
+                music.Image = data.Image;
                 #endregion
-                #region(Unit of work)
-                using(ForestContext context = new ForestContext())
-                {
-                    musicDAO.AddMusic(music, context);
-                    userDAO.AddToCollection(music, userId, context);
-                    Genre genre = genreDAO.GetGenre(data.GenreId, context);
-                    genreDAO.AddToCollection(music, genre, context);
-                    Artist artist = artistDAO.GetArtist(data.ArtistId, context);
-                    artistDAO.AddToCollection(music, artist, context);
-                    context.SaveChanges();
-                }
-                #endregion
-                return true;
 
-            }
-            catch
-            {
-                return false;
-            }
-
-        }
-        public bool DeleteMusic(int id) 
-        {
-            try
-            {
-                using(ForestContext context = new ForestContext())
-                {
-                    Music music = musicDAO.GetMusic(id, context);
-                    Genre genre = genreDAO.GetGenre(music,context);
-                    genreDAO.RemoveFromCollection(music, genre, context);
-                    Artist artist = artistDAO.GetArtist(music, context);
-                    artistDAO.RemoveFromCollection(music,artist, context);
-                    User user = userDAO.GetUser(music, context);
-                    userDAO.RemoveFromCollection(music, context);
-                    context.Musics.Remove(music);
-                    context.SaveChanges();
-                }
-                return true;
-            }
-            catch { 
-                return false;
-            }
-        }
-        public bool UpdateMusic(Music data, int id)
-        {
-            try
-            {
-                Music music = new Music()
-                {
-                    Id = id,
-                    Title = data.Title,
-                    Tracks = data.Tracks,
-                    Minutes = data.Minutes,
-                    DateReleased = data.DateReleased,
-                    Price = data.Price,
-                    Image = data.Image,
-                };
+                #region(Unit of Work - Do the work)
                 using (ForestContext context = new ForestContext())
                 {
-                    musicDAO.UpdateMusic(music, context);
-                    context.SaveChanges();
+                    musicDAO.AddMusic(context, music);
+                    userDAO.AddMusicToCollection(context, userId, music);
+                    Genre genre = genreDAO.GetGenre(context, data.GenreId);
+                    genreDAO.AddMusicToCollection(context, genre, music);
+                    Artist artist = artistDAO.GetArtist(context, data.ArtistId);
+                    artistDAO.AddMusicToCollection(context, artist, music);
+                    int changes = context.SaveChanges();
+                    Debug.WriteLine("Number of records saved: " + changes);
                 }
+                #endregion
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
+                Debug.WriteLine("Error adding music: " + ex.Message);
                 return false;
             }
-                
-            
-            
+
         }
+
+
+
     }
 }

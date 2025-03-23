@@ -4,70 +4,41 @@
     ViewData["Title"] = "Musics";
 }
 
-<h1>Musics</h1>
+@* <h1>Musics</h1> *@
 
 <p>
-    <a asp-action="Create"  asp-controller="MusicAdmin">Create New </a>
+    <a asp-action="Create" asp-controller="MusicAdmin" class="btn btn-primary">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tracks)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateReleased)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tracks)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateReleased)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @*@Html.DisplayFor(modelItem => item.Image)*@
-                    @{
-                        string imagePath = "/Images/Music/" + item.Image;
-                    }
-                    <img src="@imagePath" alt="No Image" width="30" height="30" />
-            </td>
-            <td>
-                   <a asp-action="Edit" asp-controller="MusicAdmin" asp-route-id="@item.Id" style="text-decoration: none;">
-                    <img src="/Images/Action/edit.png" alt="Edit" width="20" height="20"/>
-                   </a> |
-                   <a asp-action="GetMusic" asp-controller="Music" asp-route-id="@item.Id" style="text-decoration: none;">
-                    <img src="/Images/Action/details.jpg" alt="Details" width="20" height="20" />
-                   </a> |
-                   <a asp-action="Delete" asp-controller="MusicAdmin" asp-route-id="@item.Id" style="text-decoration: none;">
-                    <img src="/Images/Action/delete.jpg" alt="Delete" width="20" height="20" />
-                   </a> |
-                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.Id" style="text-decoration: none;">
-                        <img src="/Images/Action/cart.jpg" alt="Cart" width="20" height="20" />
-                    </a>
-                 
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <!-- Left Side: Image -->
+                    <div class="col-md-4">
+                        <img src="@item.Image" class="img-fluid rounded-start" alt="Music Cover" style="width: 100%; height: auto; object-fit: cover;">
+                    </div>
+
+                    <!-- Right Side: Details -->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text"><strong>Tracks:</strong> @item.Tracks</p>
+                            <p class="card-text"><strong>Duration:</strong> @item.minutes</p>
+                            <p class="card-text"><strong>Release Date:</strong> @item.ReleaseDate.ToString("dd MMM yyyy")</p>
+                            <p class="card-text"><strong>Price:</strong> $@item.price</p>
+
+                            <div class="mt-3">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                                <a asp-action="GetMusic" asp-controller="Music" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

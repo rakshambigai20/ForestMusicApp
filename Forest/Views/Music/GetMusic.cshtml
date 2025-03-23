@@ -6,43 +6,38 @@
 
 <h1>GetMusic</h1>
 
-<div>
-    <h4>Music</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tracks)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tracks)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateReleased)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateReleased)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="card mb-3">
+    <div class="row g-0">
+        <!-- Left Side: Image -->
+        <div class="col-md-4 text-center">
+            <img src="@Model.Image" class="img-fluid rounded-start" alt="Music Cover" style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+
+        <!-- Right Side: Details -->
+        <div class="col-md-8">
+            <div class="card-body">
+                <h4 class="card-title">@Model.Title</h4>
+                <hr />
+
+                <dl class="row">
+                    <dt class="col-sm-4"><strong>@Html.DisplayNameFor(model => model.Tracks)</strong></dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Tracks)</dd>
+
+                    <dt class="col-sm-4"><strong>@Html.DisplayNameFor(model => model.minutes)</strong></dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.minutes) min</dd>
+
+                    <dt class="col-sm-4"><strong>@Html.DisplayNameFor(model => model.ReleaseDate)</strong></dt>
+                    <dd class="col-sm-8">@Model.ReleaseDate.ToString("dd MMM yyyy")</dd>
+
+                    <dt class="col-sm-4"><strong>@Html.DisplayNameFor(model => model.price)</strong></dt>
+                    <dd class="col-sm-8">$@Model.price</dd>
+                </dl>
+
+                <div class="mt-3">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -11,12 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Forest-04dfc32b-5c30-45d2-a5ed-e2d844b11453")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a8f6422f-4680-4ec3-a742-c535def51de8")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Forest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b268abc1a34eefe2d06f62699a57a6215006d24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab5efa856f6b6d595e90f374c74f986ffe9323b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Forest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Forest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

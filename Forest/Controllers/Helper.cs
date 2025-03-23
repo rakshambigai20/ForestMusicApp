@@ -1,62 +1,55 @@
-﻿using Forest.Services.Service;
-using Forest.Data.Models.Domain;
-using Forest.Data.Models.Repository;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Forest.Services.IService;
+using Forest.Services.Service;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using Forest.Data.Models.Domain;
 
 namespace Forest.Controllers
 {
-    public class Helper
+    public class Helper : Controller
     {
-        ForestContext context;
-        GenreService genreService = new GenreService() ;
-        ArtistService artistService = new ArtistService();
+        IGenreService genreService;
+        IArtistService artistService;
+
+        public Helper() 
+        {
+            genreService = new GenreService();
+            artistService = new ArtistService();
+
+        }
         public List<SelectListItem> GetGenreDropdown()
         {
             List<SelectListItem> genreList = new List<SelectListItem>();
             IList<Genre> genres = genreService.GetGenres();
-            foreach(var item in genres)
+            foreach (Genre genre in genres)
             {
-                genreList.Add
-                    (
-                    new SelectListItem()
-                    {
-                        Text = item.Name,
-                        Value = item.Id.ToString(),
-                        Selected = (item.Name == (genres[0].Name) ? true : false)
-                    }
-                    );
+                genreList.Add(
+                new SelectListItem { 
+                    Text = genre.Name, 
+                    Value = genre.Id.ToString(),
+                    Selected = (genre.Name == genres[0].Name ? true : false)});
+
             }
             return genreList;
         }
+
         public List<SelectListItem> GetArtistDropdown()
         {
             List<SelectListItem> artistList = new List<SelectListItem>();
             IList<Artist> artists = artistService.GetArtists();
-            foreach (var item in artists)
+            foreach (Artist artist in artists)
             {
-                artistList.Add
-                    (
-                    new SelectListItem()
-                    {
-                        Text = item.Name,
-                        Value = item.Id.ToString(),
-                        Selected = (item.Name == (artists[0].Name) ? true : false)
-                    }
-                    );
+                artistList.Add(
+                new SelectListItem
+                {
+                    Text = artist.Name,
+                    Value = artist.Id.ToString(),
+                    Selected = (artist.Name == artists[0].Name ? true : false)
+                });
             }
             return artistList;
         }
-        public IEnumerable<SelectListItem> GetSelectList<T>(IList<T> list,
-            Func<T, object> funcToGetValue, Func<T, Object> funcToGetText)
 
-        {
-            return list.Select(x => new SelectListItem
-            {
-                Value = funcToGetValue(x).ToString(),
-                Text = funcToGetText(x).ToString()
-            });
-        }
     }
-    
 }

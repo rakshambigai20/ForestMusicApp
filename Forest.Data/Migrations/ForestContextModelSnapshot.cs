@@ -17,7 +17,7 @@ namespace Forest.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "9.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -38,12 +38,12 @@ namespace Forest.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("userId");
 
                     b.ToTable("Artists");
                 });
@@ -60,16 +60,12 @@ namespace Forest.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhotoUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
+                    b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("userId");
 
                     b.ToTable("Genres");
                 });
@@ -85,9 +81,6 @@ namespace Forest.Data.Migrations
                     b.Property<int?>("ArtistId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DateReleased")
-                        .HasColumnType("datetime2");
-
                     b.Property<int?>("GenreId")
                         .HasColumnType("int");
 
@@ -95,11 +88,8 @@ namespace Forest.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Minutes")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -108,7 +98,13 @@ namespace Forest.Data.Migrations
                     b.Property<int>("Tracks")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
+                    b.Property<int>("minutes")
+                        .HasColumnType("int");
+
+                    b.Property<double>("price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -117,7 +113,7 @@ namespace Forest.Data.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("userId");
 
                     b.ToTable("Musics");
                 });
@@ -130,24 +126,24 @@ namespace Forest.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DelAddress")
+                    b.Property<string>("DeliveryAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("userId");
 
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Forest.Data.Models.Domain.OrderLine", b =>
+            modelBuilder.Entity("Forest.Data.Models.Domain.Orderline", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -170,12 +166,12 @@ namespace Forest.Data.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderLines");
+                    b.ToTable("Orderlines");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.User", b =>
                 {
-                    b.Property<string>("UserId")
+                    b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
@@ -186,7 +182,7 @@ namespace Forest.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("userId");
 
                     b.ToTable("Users");
                 });
@@ -195,14 +191,14 @@ namespace Forest.Data.Migrations
                 {
                     b.HasOne("Forest.Data.Models.Domain.User", null)
                         .WithMany("Artists")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("userId");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.Genre", b =>
                 {
                     b.HasOne("Forest.Data.Models.Domain.User", null)
                         .WithMany("Genres")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("userId");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.Music", b =>
@@ -217,24 +213,24 @@ namespace Forest.Data.Migrations
 
                     b.HasOne("Forest.Data.Models.Domain.User", null)
                         .WithMany("Musics")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("userId");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.Order", b =>
                 {
                     b.HasOne("Forest.Data.Models.Domain.User", null)
                         .WithMany("Orders")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("userId");
                 });
 
-            modelBuilder.Entity("Forest.Data.Models.Domain.OrderLine", b =>
+            modelBuilder.Entity("Forest.Data.Models.Domain.Orderline", b =>
                 {
                     b.HasOne("Forest.Data.Models.Domain.Music", null)
-                        .WithMany("OrderLines")
+                        .WithMany("Orderlines")
                         .HasForeignKey("MusicId");
 
                     b.HasOne("Forest.Data.Models.Domain.Order", null)
-                        .WithMany("OrderLines")
+                        .WithMany("Orderlines")
                         .HasForeignKey("OrderId");
                 });
 
@@ -250,12 +246,12 @@ namespace Forest.Data.Migrations
 
             modelBuilder.Entity("Forest.Data.Models.Domain.Music", b =>
                 {
-                    b.Navigation("OrderLines");
+                    b.Navigation("Orderlines");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.Order", b =>
                 {
-                    b.Navigation("OrderLines");
+                    b.Navigation("Orderlines");
                 });
 
             modelBuilder.Entity("Forest.Data.Models.Domain.User", b =>

@@ -1,24 +1,25 @@
-﻿using Forest.Data.Models.Domain;
-using Forest.Data.Models.Repository;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Forest.Data.Models.Domain;
+using Forest.Data.Models.Repository;
 
 namespace Forest.Data.IDAO
 {
     public interface IGenreDAO
     {
+        //Get all genres
         IList<Genre> GetGenres(ForestContext context);
-        Genre GetGenre(int id, ForestContext context);
-        void AddToCollection(Music music, Genre genre, ForestContext context);
 
-        void AddGenre(Genre genre, ForestContext context);
-        Genre GetGenre(Music music, ForestContext context);
-        void RemoveFromCollection(Music music, Genre genre, ForestContext context);
+        //Get genre by id
+        Genre GetGenre(ForestContext context, int id);
 
-        void RemoveGenre(Genre genre, ForestContext context);
-        void UpdateGenre(Genre data, ForestContext context);
+        //Add music to genre
+        void AddMusicToCollection(ForestContext context, Genre genre, Music music);
+
+        //Add genre
+        void AddGenre(ForestContext context, Genre genre);
     }
 }

@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Forest.Data.Models.Domain.Genre>
 
 @{
-    ViewData["Title"] = "GetGenres";
+    ViewData["Title"] = "Genres";
 }
 
-<h1>GetGenres</h1>
+<h1>Genres</h1>
 
 <p>
-    <a asp-action="AddGenre" asp-controller="MusicAdmin">Create New</a>
+    <a asp-action="AddGenre" asp-controller="Genre">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -22,21 +22,12 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-            <img src="@item.PhotoUrl" style="height:200px"; "width=200px"/>
-                </td>
-            <td>
-                @*Html.DisplayFor(modelItem => item.Name)*@
-                @Html.ActionLink(item.Name,
-                    "GetGenre", "Genre", new {id = item.Id})
+                    @Html.ActionLink(item.Name, "GetGenre","Genre", new { id = item.Id })
             </td>
             <td>
-                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
-                    <a asp-action="EditGenre" asp-controller="MusicAdmin" asp-route-id="@item.Id">Edit</a> |
-                    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
-                    <a asp-action="GetGenre" asp-controller="Genre" asp-route-id="@item.Id">Details</a> |
-                    @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
-                    <a asp-action="DeleteGenre"
-                       asp-controller="MusicAdmin" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="GetGenre" asp-controller="Genre" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

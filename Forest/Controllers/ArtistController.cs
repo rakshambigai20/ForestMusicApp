@@ -8,32 +8,22 @@ namespace Forest.Controllers
 {
     public class ArtistController : Controller
     {
-        IArtistService artistService;
-
-        public ArtistController()
+        IArtistService _artistService;
+        public ArtistController() 
         {
-            artistService = new ArtistService();
+            _artistService = new ArtistService();
         }
+
+        // GET: ArtistController
         public ActionResult GetArtists()
         {
-            return View(artistService.GetArtists());
+            return View(_artistService.GetArtists());
         }
 
+        // GET: ArtistController/Details/id
         public ActionResult GetArtist(int id)
         {
-            Artist artist = artistService.GetArtist(id);
-            return View(artist);
-        }
-        // GET: ArtistController
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: ArtistController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+            return View(_artistService.GetArtist(id));
         }
 
         // GET: ArtistController/Create
@@ -45,11 +35,13 @@ namespace Forest.Controllers
         // POST: ArtistController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Artist collection)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                _artistService.AddArtist(collection);
+                return RedirectToAction(nameof(GetArtists));
+
             }
             catch
             {
