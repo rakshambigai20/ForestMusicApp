@@ -45,5 +45,13 @@ namespace Forest.Services.Service
                 context.SaveChanges();
             }
         }
+
+        public Genre GetGenreByMusic(Music music)
+        {
+            using (ForestContext context = new ForestContext())
+            {
+                return genreDAO.GetGenreByMusic(context, music);
+            }
+        }
     }
 }

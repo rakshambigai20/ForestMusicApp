@@ -13,5 +13,7 @@ namespace Forest.Services.IService
         Genre GetGenre(int id);
 
         void AddGenre(Genre genre);
+
+        Genre GetGenreByMusic(Music music);
     }
 }

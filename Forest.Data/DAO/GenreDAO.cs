@@ -31,6 +31,15 @@ namespace Forest.Data.DAO
                 .FirstOrDefault(g => g.Id == id);
         }
 
+        public Genre GetGenreByMusic(ForestContext context, Music music)
+        {
+          return context.Genres
+                .Include(g => g.Musics)
+                .FirstOrDefault(g => g.Musics.Contains(music));
+
+        }
+
+
         //Add music to genre
         public void AddMusicToCollection(ForestContext context, Genre genre, Music music)
         {

@@ -21,5 +21,8 @@ namespace Forest.Data.IDAO
 
         //Add genre
         void AddGenre(ForestContext context, Genre genre);
+
+        //Get genre by music
+        Genre GetGenreByMusic(ForestContext context, Music music);
     }
 }
