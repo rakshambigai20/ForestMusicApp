@@ -11,6 +11,7 @@ obj/
 
 # ASP.NET Secret Management
 secrets.json
+appsettings.json
 
 # Log files
 *.log
